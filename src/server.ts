@@ -5,6 +5,7 @@ import v2Router from './router/v2/index.router';
 
 const app = express();
 
+app.use(express.json());
 //Registering all the routers and their corresponding routes with our app server
 app.use('/api/v1', v1Router);
 app.use('/api/v2', v2Router); 
